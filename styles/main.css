@@ -25,13 +25,14 @@ a:hover {
 	display: block;
 }
 
-.about-us__item {
+.profile {
 	float: left;
 	display: inline-block;
 	padding: 0 0.5rem;
+	text-align: center;
 }
 
-.about-us__item img {
+.profile__img {
 	border-radius: 50%;
 	max-width: 100%;
 	display: block;
@@ -40,7 +41,7 @@ a:hover {
 }
 
 @media screen and (min-width: 700px) {
-	.about-us__item {
+	.profile {
 		max-width: 33%;
 	}
 }
