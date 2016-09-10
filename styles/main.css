@@ -24,3 +24,23 @@ a:hover {
 	margin: auto;
 	display: block;
 }
+
+.about-us__item {
+	float: left;
+	display: inline-block;
+	padding: 0 0.5rem;
+}
+
+.about-us__item img {
+	border-radius: 50%;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (min-width: 700px) {
+	.about-us__item {
+		max-width: 33%;
+	}
+}
