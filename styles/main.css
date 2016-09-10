@@ -16,6 +16,22 @@ a:hover {
 	text-decoration: underline;
 }
 
+.centered-text {
+	text-align: center;
+}
+
+.capitalized-text {
+	text-transform: uppercase;
+}
+
+.container {
+	width: 100%;
+	padding: 0 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+}
+
 .main-nav__item {
 	display: inline-block;
 }
@@ -40,7 +56,7 @@ a:hover {
 	margin-right: auto;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
 	.profile {
 		max-width: 33%;
 	}
