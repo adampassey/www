@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .unstyled-list {
 	margin: 0;
 	padding: 0;
@@ -24,6 +29,19 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.main-nav__item {
+	display: inline-block;
+}
+
+.logo {
+	margin: auto;
+	display: block;
+}
+
+section {
+	clear: both;
+}
+
 .container {
 	width: 100%;
 	padding: 0 2rem;
@@ -32,13 +50,8 @@ a:hover {
 	max-width: 1100px;
 }
 
-.main-nav__item {
-	display: inline-block;
-}
-
-.logo {
-	margin: auto;
-	display: block;
+.container__medium {
+	max-width: 600px;
 }
 
 .profile {
@@ -54,6 +67,32 @@ a:hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.say-aloha {
+	background-color: #1a6984;
+	color: #FFF;
+}
+
+.input {
+	background: transparent;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 1rem 0.5rem;
+	border: 1px solid #FFF;
+	margin-top: 2rem;
+}
+
+.input__full-length {
+	width: 100%;
+}
+
+.input__button {
+	margin-right: 0;
+}
+
+.input__button::after {
+	clear: both;
 }
 
 @media screen and (min-width: 600px) {
