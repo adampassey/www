@@ -8,6 +8,11 @@
 		<nav class="main-nav">
 			<ul class="unstyled-list">
 				<li class="main-nav__item">
+					<a href="#top">
+						<img src="./images/logo.svg" alt="Aloha Studio" class="logo">
+					</a>
+				</li>
+				<li class="main-nav__item">
 					<a href="#services">Services</a>
 				</li>
 				<li class="main-nav__item">
@@ -21,30 +26,76 @@
 				</li>
 			</ul>
 		</nav>
-		<main>
-			<section>
-				<header>
-					<img src="./images/logo.png" alt="Aloha Studio" class="logo">
+		<main id="top">
+			<header class="header">
+				<div class="header__content">
+					<img src="./images/logo.svg" alt="Aloha Studio" class="logo">
 					<p>This is Aloha, we're a digital design & development studio based in San Francisco, CA. We're a small team focused on delivering a quality product with big impact. We work to create innovating and unique solutions for users and customers.</p>
 					<a href="about" class="button button--cta">Get to know us</a>
-				</header>
+					<img src="./images/arrow.svg" alt="Scroll Down, please">
+				</div>
+				<video src="./videos/header.mp4" loop preload="auto" autoplay class="header__video"></video>
+			</header>
+			<section id="sevices" class="inverse-section">
+				<h2 class="section-heading">Services</h2>
+				<div class="service-list-container">
+					<div class="img-caption">
+						<img src="./images/webmobile.svg" alt="Web & Mobile Design" class="" />
+						<h4>Web & Mobile Design</h4>
+						<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
+					</div>
+					<div class="img-caption">
+						<img src="./images/development.svg" alt="Development" class="" />
+						<h4>Development</h4>
+						<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
+					</div>
+					<div class="img-caption">
+						<img src="./images/consulting.svg" alt="Consulting" class="" />
+						<h4>Consulting</h4>
+						<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
+					</div>
+					<div class="img-caption">
+						<img src="./images/branding.svg" alt="Branding" class="" />
+						<h4>Branding</h4>
+						<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
+					</div>
+				</div>
 			</section>
-			<section>
-				<h2>Services</h2>
-				<div>Web & Mobile Design</div>
-				<div>Development</div>
-				<div>Consulting</div>
-				<div>Branding</div>
-			</section>
-			<section>
-				<h2>Process</h2>
+			<section id="process" class="process-container">
+				<h2 class="section-heading">Process</h2>
 				<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
+				<ol class="unstyled-list">
+					<li>
+						<img src="./images/ideation.svg" alt="Ideation">
+						<h3>Ideation</h3>
+					</li>
+					<li>
+						<img src="./images/planning.svg" alt="Planning">
+						<h3>Planning</h3>
+					</li>
+					<li>
+						<img src="./images/usertesting.svg" alt="User Testing">
+						<h3>User Testing</h3>
+					</li>
+					<li>
+						<img src="./images/des.svg" alt="Design">
+						<h3>Design</h3>
+					</li>
+					<li>
+						<img src="./images/dev.svg" alt="Development">
+						<h3>Development</h3>
+					</li>
+					<li>
+						<img src="./images/deploy.svg" alt="Deploy">
+						<h3>Deploy</h3>
+					</li>
+				</ol>
 			</section>
-			<section class="about-us">
-				<div class="container">
+			<section id="about-us">
+				<div class="profiles-container">
 					<h2 class="centered-text capitalized-text">About Us</h2>
 					<div class="profile">
-						<img src="http://placehold.it/260x260" class="profile__img">
+						<img src="./images/adam.jpg" class="profile__img">
 						<h4>Adam Passey</h4>
 						<h5>Developer</h5>
 						<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
@@ -56,7 +107,7 @@
 						</ul>
 					</div>
 					<div class="profile">
-						<img src="http://placehold.it/260x260" class="profile__img">
+						<img src="./images/janelle.jpg" class="profile__img">
 						<h4>Janelle Hitz</h4>
 						<h5>Designer</h5>
 						<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
@@ -68,7 +119,7 @@
 						</ul>
 					</div>
 					<div class="profile">
-						<img src="http://placehold.it/260x260" class="profile__img">
+						<img src="./images/paul.jpg" class="profile__img">
 						<h4>Paul Grock</h4>
 						<h5>Developer</h5>
 						<p>Culpa labore excepteur adipisicing voluptate. Laboris ex eu Lorem qui elit ad nulla ea esse. Incididunt sint non non in id ipsum aute commodo est deserunt qui. Et officia nisi officia voluptate ullamco amet nisi. Sunt incididunt officia id ut tempor eiusmod.</p>
@@ -81,7 +132,7 @@
 				</div>
 			</section>
 			<section class="say-aloha">
-				<div class="container container--medium">
+				<div class="say-aloha-container">
 					<h2 class="centered-text capitalized-text">Say Aloha</h2>
 					<p>Want to get started on your next project with us? We do too, drop us a line and say hello, tell us about yourself, and we'll be in contact. We can't wait to hear from you. Mahalo!</p>
 					<form>

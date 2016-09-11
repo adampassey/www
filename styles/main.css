@@ -2,9 +2,16 @@
 	box-sizing: border-box;
 }
 
+html,
 body {
 	margin: 0;
 	padding: 0;
+	color: white;
+}
+
+img,
+video {
+	max-width: 100%;
 }
 
 .unstyled-list {
@@ -15,6 +22,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: white;
 }
 
 a:hover {
@@ -29,20 +37,76 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.main-nav {
+	position: fixed;
+	z-index: 10;
+}
+
 .main-nav__item {
 	display: inline-block;
 }
 
-.logo {
+.header {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.header__content {
+	width: 350px;
+	max-width: 80%;
+}
+
+.header__video {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/* TODO: Look into fallbacks for this */
+	object-fit: cover;
+	z-index: -1;
+	max-width: none;
+}
+
+.inverse-section {
+	color: black;
+}
+
+.service-list-container {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	max-width: 80%;
 	margin: auto;
-	display: block;
 }
 
-section {
-	clear: both;
+@media screen and (min-width: 32em) {
+	.service-list-container {
+		flex-direction: row;
+	}
 }
 
-.container {
+.section-heading {
+	text-align: center;
+}
+
+.img-caption {
+	flex-basis: 20em;
+}
+
+.process-container {
+	background-color: #2F3D51;
+}
+
+.profiles-container {
 	width: 100%;
 	padding: 0 2rem;
 	margin-left: auto;
@@ -50,15 +114,18 @@ section {
 	max-width: 1100px;
 }
 
-.container--medium {
-	max-width: 600px;
-}
-
 .profile {
 	float: left;
 	display: inline-block;
 	padding: 0 0.5rem;
 	text-align: center;
+	color: black;
+}
+
+@media screen and (min-width: 600px) {
+	.profile {
+		max-width: 33%;
+	}
 }
 
 .profile__img {
@@ -70,8 +137,18 @@ section {
 }
 
 .say-aloha {
+	clear: both;
 	background-color: #1a6984;
 	color: #FFF;
+}
+
+.say-aloha-container {
+	clear: both;
+	width: 100%;
+	padding: 0 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
 }
 
 .input {
@@ -93,10 +170,4 @@ section {
 
 .input--button::after {
 	clear: both;
-}
-
-@media screen and (min-width: 600px) {
-	.profile {
-		max-width: 33%;
-	}
 }
