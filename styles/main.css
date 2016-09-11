@@ -136,6 +136,20 @@ a:hover {
 	margin-right: auto;
 }
 
+.social-links {
+	text-align: center;
+}
+
+.social-link {
+	display: inline-block;
+}
+
+.social-link__item {
+	text-indent: -9999px;
+	white-space: nowrap;
+	padding: 0.2rem;
+}
+
 .say-aloha {
 	clear: both;
 	background-color: #1a6984;
