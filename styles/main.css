@@ -73,6 +73,16 @@ a:hover {
 	max-width: none;
 }
 
+.quote-section {
+	background: #1a6984;
+	padding: 2rem;
+}
+
+.quote {
+	text-align: center;
+	font-weight: bold;
+}
+
 .inverse-section {
 	color: black;
 }
