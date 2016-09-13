@@ -112,6 +112,7 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1100px;
+	color: #000;
 }
 
 .profile {
@@ -134,6 +135,9 @@ a:hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	border-width: 10px;
+	border-color: #d8d8d8;
+	border-style: solid;
 }
 
 .social-links {
@@ -148,6 +152,24 @@ a:hover {
 	text-indent: -9999px;
 	white-space: nowrap;
 	padding: 0.2rem;
+}
+
+.our-work {
+	background: url("http://placehold.it/1280x380") center center;
+	padding: 2rem 0;
+}
+
+.our-work__description {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1rem;
+}
+
+.our-work__button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .say-aloha {
@@ -172,6 +194,22 @@ a:hover {
 	padding: 1rem 0.5rem;
 	border: 1px solid #FFF;
 	margin-top: 2rem;
+}
+
+.input::-webkit-input-placeholder {
+	color: #FFF;
+}
+
+.input::-moz-placeholder {
+	color: #FFF;
+}
+
+.input:ms-input-placeholder {
+	color: #FFF;
+}
+
+.input:=moz-placeholder {
+	color: #FFF;
 }
 
 .input--full-length {
